@@ -4,16 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>firstgit</title>
-</head>
-<body>
-   <h1>My Self</h1>
 
-   <p>My name is Sandali.I am twenty years old.I studied at St/ Anthony's Gielas' College.Now I am a student of the Open University of Sri Lanka.I have a sister and a brother.My mother is a midwife.My father was an electrician.I like  listen to the music.My favourite colour is white. </p>
-   <h5>my favourite fruites</h5>
-   <ul>
-       <li>apple</li>
-       <li>mango</li>
-       <li>orange</li>
-   </ul>
-</body>
-</html>
+    <style>
+    body{
+        margin:30px;}
+    
+    caption{
+        font-size:20px;
+        }
+    .p{
+        font-size:20px;
+        }
+    
+            input[type=text],select{
+                    width:100%;
+                    padding:12px 20px;
+                    margin:8px 0;
+                    display:inline-block;
+                    border:1px solid #ccc;
+                    border-radius:8px;
+                    box-sizing:border-box;
+                    }
+            input[type=submit]{
+                    background-color:#00FF00;
+                    color: black;
+                     padding:15px 32px;
+                    text-align:center;
+                    text-decoration:none;
+                    display:inline-block;
+                    font-size:16px;
+                    margin:4px 2px;
+                    cursor:pointer; 
+                    border-radius:4px;
+                    border:1px solid #00FF00;
+                    width:100%;}
+    
+            input[type=reset]{
+                    background-color:blue;
+                    color: white;
+                     padding:14px 30px;
+                    text-align:center;
+                    text-decoration:none;
+                    display:inline-block;
+                    font-size:14px;
+                    margin:4px 2px;
+                    cursor:pointer; 
+                    border-radius:4px;
+                    border:1px solid green;
+                    width:50%;}
+    
+            textarea{
+                    width:100%;
+                    padding:12px 20px;
+                    height:150px;
+                    margin:8px 0;
+                    resize:none;
+                    border:1px solid #ccc;
+                    border-radius:8px;
+                    box-sizing:border-box;
+                    }
+    
+            
+            form{
+                
+                
+                border-radius:5px;
+                background-color:rgb(242, 242, 242);
+                padding: 20px;}
+                
+    </style>
+    </head>
+    
+    <body >
+        <br>
+        
+        <table border=0 align="center" cellpadding="20" >
+        <tr >
+            <td><img src="open.jpg" width=85px hieght=85px alt="OUSL Logo"></td>
+            <td><h1><font face="Britannic Bold">Open University of Sri Lanka</font></h1>
+        <br>
+            <p class="p"><b>Software Engineering Degree Programme</b>
+        <br>Faculty of Engineering Technology &nbsp;/  &nbsp; Department of Electrical and Computer Enginnering </p></td>
+        </tr>
+        </table>
+    
+        <h2><center>UNIVERSITY REGISTRATION FORM</center></h2><br>
+        
+            
+        <div>
+        <form>
+                <label for="fname"><b>Full Name</b></label>
+                <input type="text" id="fname"name="txt1" placeholder="Halpawatta Liyanage Sandali sithumani Liyanage">
+                
+                <label for="lname"><b>Name with Initials</b></label>
+                <input type="text" id="lname"name="txt2" placeholder="H.L.S.S.Liyanage">
+            
+                <label for="address"><b>Home Adress</b></label>
+                <input type="text" id="address" name="txt3" placeholder="No.15, School Lane, Kandy.">
+            
+                <label for="nic"><b>NIC</b></label>
+                <input type="text" id="nic" name="txt4" placeholder="123456789v">
+            
+                <label for="cnumber"><b>Contact Number</b></label>
+                <input type="text"  id="cnumber"  name="txt5" placeholder="">
+                 
+                <label for="mail"><b>Email Address</b></label>
+                <input type="text"  id="mail"  name="txt6" placeholder=""> 
+                
+            <br><br>
+                <label for=gender><b>Gender</b></label>
+                <label for="male1"><input type="radio" value="male" name="gender" id="male1">Male</label> &nbsp;
+                <label for="female1"><input type="radio" value="female" name="gender" id="female1">Female</lable> &nbsp;
+                <label for="other1"><input type="radio" value="Other" name="gender" id="other1">Other</label>
+            
+                <br><br>
+                <label for="nation"><b>Nationality</b></label>
+                <input type="text"  id="nation"  name="txt7" placeholder=""> 
+                <label for="scl"><b>School</b></label>
+                <input type="text"  id="scl"  name="txt8" placeholder="Your School"> 
+                <br><br>
+            
+                <label for="dob"><b>Date of Birth</b></label>
+                <input type="date" name="Birthday" id="dob" size="100%">
+        
+        <br>
+        
+        <hr>
+        
+            
+                <label for="alz"><b>GCE(advanced level)</b></label>
+                <br><br>
+                Z-Score<input type="text" id="alz" name="Z-Score"  placeholder="">
+                Subjects with Grades
+                <textarea name="al" rows="5" cols="78"  placeholder=""></textarea>
+                <br><br>
+                <label for="ol"><b>GCE(ordinary level)</b></label>
+                
+            <br><br>
+                Subjects with Grades
+                <textarea name="al" rows="11" cols="78"></textarea>
+            
+                
+            
+                <label for="other"><b>Other Education Qualifications</b></label>
+                <input type="text" name="dip" id="other" placeholder="Diploma/HND/NDT">
+                <input type="text" name="dip"  id="dip" placeholder="Diploma/HND/NDT" >
+            
+            
+            <br>
+            
+            <hr><br>
+            
+            <b>Degree Programme and Additional details</b><br><br>
+            
+                <label for="course">Choose Courses</label><br><br>
+                <input type="checkbox" value="AGM3203" name="sub1" id="course"> AGM3203   Communication Skills<br>
+                <input type="checkbox" value="AGM3203" name="sub1"  id="course">EEI3346 Web Application Development<br>
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">EEI3262 Introduction to Object Oriented Programming<br>
+            
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">EEI3266     IS and Data Management<br>
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">EEX3373    Communication and Computer Technology<br>
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">EEX3467    Software Engineering concept and Programming<br>
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">MHZ3459  Basic Mathematics for Computing<br>
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">EEI3269     Introduction to Mobile Application Development<br>
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">EEI3668     Graphic and Interactive Multimedia Design<br>
+            <input type="checkbox" value="AGM3203" name="sub1" id="course">EEI3372      Programming in Python<br>
+            <input type="checkbox" value="AGM3203" name="sub1"  id="course">LLJ3245     Introduction of Law<br><br>
+            
+                <label for="rcenter"><b>Closest Regional Center</b></label>
+                <select name="centers"><option value="Colombo" id="rcenter">Colombo</option>
+                    <option value="Kandy"  id="rcenter">Kandy</option>
+                    <option value="Matara"  id="rcenter">Matara</option>
+                    <option value="aAnuradhapura">Anuradhapura</option>
+                    <option value="Badulla"  id="rcenter">Badulla</option>
+                    <option value="Batticalo">Batticalo</option>
+                    <option value="Jaffna"  id="rcenter">Jaffna</option>
+                    <option value="Kurunagala"  id="rcenter">Kurunagala</option>
+                    <option value="Rathnapura"  id="rcenter">Rathnapura</option></select>
+                <br>
+                <br>
+                
+                <label for="host"><b>Do you expect hostel facilities?</b></label>
+                <input type="radio" value="yes" name="host1" id="host">Yes &nbsp; &nbsp; <input type="radio" value="no" name="host1" id="host">No 
+            
+            <br>
+            <br>
+            <br>
+            
+            
+                
+                    <center><input type="Reset" class="button"></center>
+                    <input type="Submit" value="SUBMIT"  class="button">
+                
+        
+            
+            </form>
+            </div>
+                
+    </body>
+        
+        
+    </html>
